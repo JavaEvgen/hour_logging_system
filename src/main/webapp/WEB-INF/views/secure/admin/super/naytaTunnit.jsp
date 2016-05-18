@@ -132,6 +132,12 @@
 														<c:set var="yhtm" value="${lminuutit+60 - aminuutit}"></c:set>
 														<c:set var="yhtt" value="${ltunnit - atunnit-1}"></c:set>
 													</c:if>
+													
+													<c:if test="${lminuutit == aminuutit && ltunnit == atunnit}">
+														<c:set var="yhtm" value="${0}"></c:set>
+														<c:set var="yhtt" value="${0}"></c:set>
+													</c:if>
+													
 
 													<c:if test="${lminuutit > aminuutit && ltunnit > atunnit}">
 														<c:set var="yhtm" value="${lminuutit - aminuutit}"></c:set>
@@ -142,6 +148,17 @@
 														<c:set var="yhtm" value="${lminuutit+60 - aminuutit}"></c:set>
 														<c:set var="yhtt" value="${ltunnit+23 - atunnit-1}"></c:set>
 													</c:if>
+													
+														<c:if test="${lminuutit == aminuutit && ltunnit > atunnit}">
+														<c:set var="yhtm" value="${lminuutit - aminuutit}"></c:set>
+														<c:set var="yhtt" value="${ltunnit - atunnit}"></c:set>
+													</c:if>
+													
+													<c:if test="${lminuutit == aminuutit && ltunnit < atunnit}">
+														<c:set var="yhtm" value="${lminuutit+60 - aminuutit}"></c:set>
+														<c:set var="yhtt" value="${ltunnit+23 - atunnit-1}"></c:set>
+													</c:if>
+													
 
 													<c:if test="${lminuutit > aminuutit && ltunnit < atunnit}">
 														<c:set var="yhtm" value="${lminuutit - aminuutit}"></c:set>
