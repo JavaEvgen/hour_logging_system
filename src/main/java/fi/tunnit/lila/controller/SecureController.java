@@ -168,7 +168,7 @@ public class SecureController {
 			projektit = pdao.haeKaikki();
 			//Magic validonti jos projekteja ei ole
 			if(projektit.size() == 0){
-				String projvirhe = "Ei projekteja tietokannassa, tuntien lis‰‰minen on mahdotonta!";
+				String projvirhe = "";
 				model.addAttribute("virhe", projvirhe);
 			}
 			model.addAttribute("projektit", projektit);
