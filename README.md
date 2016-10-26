@@ -7,5 +7,7 @@ Spring Authentication, bean validation(using annotations)
 
 Much more shorter and better compared to our first project(Pizzeria)
 
+WARNING! Working branch is JulleVol2_Evgeny
+
 Waiting for Your comments,
 Thank You.
